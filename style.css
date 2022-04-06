@@ -1,0 +1,51 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (min-with: 700px) {
+  header {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1rem;
+  }
+}
+
+input#red {
+  accent-color: red;
+}
+
+input#green {
+  accent-color: green;
+}
+
+input#blue {
+  accent-color: blue;
+}
+
+@media screen and (min-width: 700px) {
+  #color-value {
+    margin-left: auto;
+  }
+}
