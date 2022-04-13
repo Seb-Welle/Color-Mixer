@@ -8,6 +8,7 @@
 html,
 body {
   height: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -24,7 +25,7 @@ header {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-@media screen and (min-with: 700px) {
+@media screen and (min-with: 600px) {
   header {
     flex-direction: row;
     align-items: baseline;
@@ -44,8 +45,16 @@ input#blue {
   accent-color: blue;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   #color-value {
     margin-left: auto;
   }
+}
+
+#btn-random {
+  margin: 0;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem;
 }
